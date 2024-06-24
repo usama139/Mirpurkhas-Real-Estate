@@ -19,7 +19,7 @@ export default function Listing() {
     const {currentUser} = useSelector((state) => state.user);
 
     useEffect(() => {
-        const fetchListing = async () => {
+        const fetchListing = async () => {d
             try {
                 setLoading(true);
                 setError(false);
