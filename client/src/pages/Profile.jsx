@@ -178,11 +178,11 @@ const handleListingDelete = async (listingId) => {
           className="border p-3 rounded-lg" 
           onChange={handleChange}
           />
-        <button disabled={loading} className="bg-slate-700 text-white rounded-lg
+        <button disabled={loading} className="bg-green-600 text-white rounded-lg
          p-3 uppercase hover:opacity-95 disabled:opacity-80">
           {loading ? 'Loading...' : 'Update'}
          </button>
-         <Link className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95" to={"/create-listing"}>
+         <Link className="bg-green-900 text-white p-3 rounded-lg uppercase text-center hover:opacity-95" to={"/create-listing"}>
           Create Listing
          </Link>
 
@@ -193,7 +193,7 @@ const handleListingDelete = async (listingId) => {
       </div>
 
       <p className="text-red-700 mt-5">{error ? error : ''}</p>
-      <p className="text-green-700 mt-5">{updateSuccess ? 'User is Updated successfully!' : ''}</p>
+      <p className="text-green-950 mt-5">{updateSuccess ? 'User is Updated successfully!' : ''}</p>
       <button onClick={handleShowListings} className="text-green-700 w-full">Show Listings</button>
       <p className="text-red-700 mt-5">{showListingsError ? 'Error showing listings' : ''}</p>
 

@@ -151,7 +151,7 @@ const handleSubmit = async (e) => {
 }
   return (
     <main className='p-3 max-w-4xl mx-auto'>
-        <h1 className='text-3xl font-semibold text-center my-7'>Update a Listing</h1>
+        <h1 className='text-3xl font-semibold text-center my-7 text-green-900'>Update a Listing</h1>
         <form onSubmit={handleSubmit} className='flex flex-col sm:flex-row gap-4'>
         <div className='flex flex-col gap-4 flex-1'>
             <input type="text" placeholder='Name' className='border p-3
@@ -248,8 +248,8 @@ const handleSubmit = async (e) => {
         })
         }
 
-        <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase
-        hover:opacity-95 disabled:opacity-80'>{loading ? 'Creating...' : 'Update Listing'}</button>
+        <button disabled={loading || uploading} className='p-3 bg-green-900 text-white rounded-lg uppercase
+        hover:opacity-95 disabled:opacity-80'>{loading ? 'Updating...' : 'Update Listing'}</button>
         {error && <p className="text-red-700 text-sm">{error}</p>}
         </div>
         
